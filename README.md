@@ -18,7 +18,7 @@
 <br>
 
 ## Visuals and Diagrams <br>
-<p>Flow chart for system logic, architecture diagram. </p>
+<p>Flow chart for system logic, architecture diagram, maybe some visual on how the final solution should look like. </p>
 <br>
 
 ## Reiterations <br>
