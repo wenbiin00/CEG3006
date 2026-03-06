@@ -14,7 +14,19 @@
 <br>
 
 ## Literature Review <br>
-<p>~200-300 words, require research and reference.</p>
+<p>~200-300 words, require research and reference.
+Vehicle-to-Pedestrian (V2P) communication has emerged as an important component of intelligent transportation systems aimed at improving the safety of vulnerable road users (VRUs), including pedestrians and cyclists. V2P systems enable vehicles and pedestrians to exchange real-time information such as location, speed, and trajectory to predict potential collisions and provide timely warnings. In Vulnerable Road User Safety Using Mobile Phones with Vehicle-to-VRU Communication, smartphone-based V2P systems are proposed as a practical solution where mobile devices carried by pedestrians communicate with nearby vehicles through wireless V2X networks. These systems allow early detection of dangerous interactions between vehicles and pedestrians and can significantly improve situational awareness for both parties. However, the study highlights limitations including high energy consumption, dependence on smartphone availability, and reduced reliability due to GPS inaccuracies.
+
+Similarly, V2P Collision Warnings for Distracted Pedestrians: A Comparative Study with Traditional Auditory Alerts demonstrates that personalized digital warnings delivered through connected devices can improve pedestrian reaction time compared to conventional auditory alerts such as vehicle horns. While such approaches show promise in enhancing pedestrian safety, current implementations still face several practical challenges.
+
+Many existing V2P solutions rely on onboard vehicle sensors such as cameras, radar, or LiDAR to detect pedestrians. These perception systems may fail in scenarios involving physical obstructions, poor lighting conditions, or non-line-of-sight situations. Meanwhile, smartphone-based applications may suffer from high battery consumption and low adoption rates among vulnerable populations such as children or the elderly.
+
+Therefore, there is a need for alternative V2P solutions that provide reliable, low-latency communication while minimizing power consumption and improving user accessibility. This motivates the development of a dedicated wearable communication device capable of enabling efficient vehicle-pedestrian interaction and enhancing road safety.
+
+References:
+https://arxiv.org/html/2504.13906v1
+https://www.mdpi.com/2079-9292/13/2/331#:~:text=In%20this%20paper%2C%20V2P%20communication,and%20recommendations%20in%20Section%206
+</p>
 <br>
 
 ## Visuals and Diagrams <br>
