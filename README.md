@@ -21,6 +21,18 @@
 <p>Flow chart for system logic, architecture diagram. </p>
 <br>
 
+## Reiterations <br>
+<ol>
+  <li>Drains battery: so we change to a low-footprint and low-power wearable</li>
+  <li>May be hard to adopt: as certain demographics may not choose to install/keep updated, therefore we change to wearable</li>
+  <li>Communication protocol/location tracking: Standard GNSS not accurate enough, therefore we change to UWB (Centimeter level)</li>
+  <li>Broadcasting frequency: High battery drain detected at 10hz broadcasting. Modifying to lower suitable frequency or adaptive frequency based on nearby vehicles.</li>
+  <li>False positive? Based on how the solution is designed, high degree of false positive for high risk may be detected (Accuracy? Finetuning of algorithm?)</li>
+  <li>Addressing both sides of interaction: Wearable device will also emit a high volume tweet/beep in response to being marked as high-risk.</li>
+  <li>Issues with Bluetooth 5.0 for peer to peer communication (Tag-to-Vehicle)</li>
+</ol>
+
+
 ## Hardware Parameters <br>
 <p>Need research for this section as well. Create a table and fill it in with possible hardware implementations and their respective parameters.</p>
 <br>
