@@ -16,3 +16,14 @@ References:
 https://zonesafe.com/proximity-warning-systems/
 
 ‌
+
+
+Scenario: Elementary School Morning Drop-Off (7:45 AM)
+8-year-old Emma wears a clip-on safety tag attached to her backpack as she walks to school. The AirTag-sized device contains a BLE 5.0 radio, 9-axis IMU sensor, and LoRaWAN backup.
+As Emma approaches the school crosswalk, BLE beacons mounted on lamp posts detect her tag. Her device immediately switches from low-power mode (1 Hz beacon rate) to high-frequency safety mode (10 Hz). The tag vibrates gently: "You're near a road."
+A sedan approaching at 40 km/h has a vehicle OBU that receives Emma's BLE beacon. The tag's payload identifies her as: USER_TYPE: CHILD | MOTION: WALKING | BATTERY: 87%.
+The driver's dashboard displays: "CHILD DETECTED AHEAD - SLOW TO 25 KM/H"
+Emma's tag vibrates twice as the vehicle approaches within 30 meters. Both parties are now aware—dual-alert system active.
+Meanwhile, the system uses rotating anonymous IDs (changing every 5 minutes) to prevent tracking, similar to the Seeed Studio school badge that successfully protects student privacy while enabling real-time safety.
+If Emma were to fall, her IMU would detect the impact and broadcast an emergency LoRaWAN alert to school staff—just like the fall detection in the airbag belt case study.
+Cost per tag: ~$40 | Infrastructure: Existing school zone beacons + BLE modules
