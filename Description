@@ -9,11 +9,11 @@ Literature Review
 Vehicle-to-Pedestrian (V2P) communication has emerged as a key solution for improving the safety of vulnerable road users (VRUs) by enabling real-time information exchange between vehicles and pedestrians. In Vulnerable 
 Road User Safety Using Mobile Phones with Vehicle-to-VRU Communication, smartphone-based V2P systems are proposed as a practical approach, where pedestrians use mobile devices to transmit their position and receive safety 
 alerts through V2X networks. These systems enhance situational awareness and allow early detection of potential collisions. However, the study highlights several limitations, including high energy consumption, reliance on 
-user participation, and reduced positioning accuracy due to GPS constraints.
+user participation, and reduced positioning accuracy due to GPS constraints. (Rashid et al., 2024)
 
 Similarly, V2P Collision Warnings for Distracted Pedestrians: A Comparative Study with Traditional Auditory Alerts evaluates the effectiveness of V2P warnings compared to conventional auditory signals such as vehicle horns. 
 The results show that V2P alerts significantly improve response time, particularly for distracted pedestrians using smartphones, and are more effective in noisy urban environments . This demonstrates the potential of direct 
-communication-based safety systems over traditional methods.
+communication-based safety systems over traditional methods. (Certad et al., 2025)
 
 Despite these advancements, current V2P implementations still face practical challenges. Sensor-based systems relying on cameras, radar, or LiDAR are limited by line-of-sight constraints and may fail in occluded environments,
 while smartphone-based approaches suffer from high battery consumption and inconsistent user adoption. These limitations highlight the need for a more reliable and energy-efficient solution.
@@ -22,4 +22,7 @@ To address these gaps, this project proposes a low-power, dedicated wearable saf
 trajectory tracking with dual alert mechanisms for both drivers and pedestrians, the proposed system aims to provide a more robust and accessible V2P solution for real-world deployment.
 
 References
-
+Certad, N., Del Re, E., Varughese, J., & Olaverri-Monreal, C. (2025). V2P collision warnings for distracted pedestrians: A comparative study with traditional auditory alerts. arXiv. 
+https://arxiv.org/abs/2504.13906
+Rashid, M., Al-Khateeb, H., Alazab, M., & Alazab, M. (2024). Vulnerable road user safety using mobile phones with vehicle-to-VRU communication. Electronics, 13(2), 331. 
+https://www.mdpi.com/2079-9292/13/2/331
