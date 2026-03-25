@@ -1,2 +1,27 @@
 Brief description of your solution, explaining why it is relevant as well as a short literature
 review showing how it differs from other solutions. [references, links, 200-300 words]
+
+Brief Description
+
+
+
+Literature Review
+Vehicle-to-Pedestrian (V2P) communication has emerged as a key solution for improving the safety of vulnerable road users (VRUs) by enabling real-time information exchange between vehicles and pedestrians. In Vulnerable 
+Road User Safety Using Mobile Phones with Vehicle-to-VRU Communication, smartphone-based V2P systems are proposed as a practical approach, where pedestrians use mobile devices to transmit their position and receive safety 
+alerts through V2X networks. These systems enhance situational awareness and allow early detection of potential collisions. However, the study highlights several limitations, including high energy consumption, reliance on 
+user participation, and reduced positioning accuracy due to GPS constraints.
+
+Similarly, V2P Collision Warnings for Distracted Pedestrians: A Comparative Study with Traditional Auditory Alerts evaluates the effectiveness of V2P warnings compared to conventional auditory signals such as vehicle horns. 
+The results show that V2P alerts significantly improve response time, particularly for distracted pedestrians using smartphones, and are more effective in noisy urban environments . This demonstrates the potential of direct 
+communication-based safety systems over traditional methods.
+
+Despite these advancements, current V2P implementations still face practical challenges. Sensor-based systems relying on cameras, radar, or LiDAR are limited by line-of-sight constraints and may fail in occluded environments,
+while smartphone-based approaches suffer from high battery consumption and inconsistent user adoption. These limitations highlight the need for a more reliable and energy-efficient solution.
+
+To address these gaps, this project proposes a low-power, dedicated wearable safety tag that leverages cellular LTE/5G communication to enable low-latency interaction between pedestrians and vehicles. By combining accurate 
+trajectory tracking with dual alert mechanisms for both drivers and pedestrians, the proposed system aims to provide a more robust and accessible V2P solution for real-world deployment.
+
+References
+Member, N. C. I. G. S., & Systems, D. I. T. (2025, April 9). V2P Collision Warnings for Distracted Pedestrians: A Comparative Study with Traditional Auditory Alerts. 
+V2p collision warnings for distracted pedestrians: A comparative study with traditional auditory alerts. 
+https://arxiv.org/html/2504.13906v1 
