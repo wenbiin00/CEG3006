@@ -52,3 +52,8 @@ https://www.mdpi.com/2079-9292/13/2/331#:~:text=In%20this%20paper%2C%20V2P%20com
 ## AI Usage <br>
 <p>Insert AI prompts and responses from Gen AI.</p>
 <br>
+
+## Real-World Case Study <br>
+<ol>
+  
+</ol>
