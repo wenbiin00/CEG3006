@@ -2,6 +2,19 @@ Brief description of your solution, explaining why it is relevant as well as a s
 review showing how it differs from other solutions. [references, links, 200-300 words]
 
 Brief Description
+Current Vehicle-to-Pedestrian (V2P) solutions fall into two broad categories, each with significant drawbacks. Onboard sensor-based systems (cameras, radar and LiDAR) are constrained by line-of-sight requirements 
+and fail under occlusion or poor lighting. Smartphone-based V2X applications, while more accessible, suffer from high battery drain and low adoption rates among vulnerable populations such as young children and the elderly.
+
+Our solution is a low-power, dedicated wearable safety tag that addresses these gaps. Using Bluetooth Low Energy (BLE) for vehicle discovery and Ultra-Wideband (UWB) for centimetre-level ranging, the tag continuously estimates
+the relative position and trajectory between the pedestrian and approaching vehicles. When a high-risk collision trajectory is detected, it simultaneously triggers an acoustic alert on the wearable and broadcasts a warning to the
+vehicle's dashboard unit, ensuring both parties are notified in real time with a combined detection-to-alert latency of under 200ms.
+
+Unlike smartphone-based systems, the tag is a purpose-built device with minimal power draw, designed for all-day wearability without frequent recharging. Unlike sensor-only vehicle systems, it does not rely on line-of-sight and 
+remains effective in obstructed or low-visibility environments.
+
+The tag operates adaptively: it remains in a low-power BLE scanning state when no vehicles are nearby and escalates to active UWB ranging when a vehicle is detected. Alert thresholds are tiered: a MEDIUM alert 
+(intermittent buzz + dashboard notification) is issued when Time-to-Collision drops below 4 seconds and a HIGH alert (continuous tone + dashboard alarm) when it drops below 2 seconds. This dual-sided alerting makes the system
+robust even when one party is distracted, ensuring it serves as a practical and inclusive safety solution for all pedestrian demographics.
 
 
 
