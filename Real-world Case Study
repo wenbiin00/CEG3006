@@ -5,7 +5,7 @@ A real-world use case of Vehicle-to-Pedestrian (V2P) implementation wearable can
 Forklifts are equipped with detection systems that create a 360-degree safety zone around the vehicle, and when a pedestrian carrying a wearable tag enters this zone, both the driver and the pedestrian receive immediate alerts 
 through in-cab warnings and vibrating tags, allowing both parties to react and avoid potential collisions. Notably, the system is capable of detecting pedestrians even in non-line-of-sight conditions, such as behind walls 
 or obstacles, improving safety in complex environments. (Forklift Proximity Warning System - ZoneSafe, 2026) However, these systems are typically limited to short-range communication and controlled industrial settings. 
-Building upon this concept, the proposed system extends the wearable V2P approach to urban environments by leveraging LTE/5G communication for low-latency, long-range interaction between pedestrians and vehicles. This 
+Building upon this concept, the proposed concept extends the wearable V2P approach to urban environments by leveraging LTE/5G communication for low-latency, long-range interaction between pedestrians and vehicles. This 
 enables more advanced features such as trajectory prediction and real-time alerts, enhancing safety in dynamic road scenarios.
 
 
