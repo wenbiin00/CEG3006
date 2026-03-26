@@ -43,6 +43,7 @@ https://www.mdpi.com/2079-9292/13/2/331#:~:text=In%20this%20paper%2C%20V2P%20com
   <li>Addressing both sides of interaction: Wearable device will also emit a high volume tweet/beep in response to being marked as high-risk.</li>
   <li>Issues with Bluetooth 5.0 for peer to peer communication (Tag-to-Vehicle)</li>
 </ol>
+<br>
 
 
 ## Hardware Parameters <br>
@@ -56,10 +57,11 @@ https://www.mdpi.com/2079-9292/13/2/331#:~:text=In%20this%20paper%2C%20V2P%20com
 ## Real-World Case Study <br>
 <ol>
   
-</ol>3
+</ol>
+<br>
 
 ## Functions and Messages <br>
 <p>
   
 </p>
-</br>
+<br>
