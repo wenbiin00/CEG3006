@@ -82,7 +82,7 @@ host_vehicle = get_vehicle_telemetry() # gets speed, heading, gps
 warning_threshold_ttc = 2.5 # threshold for collision warning in seconds
 critical_distance = 100.0 # max uwb tracking range in meters
 
-# keep running while the car is on
+### keep running while the car is on
 while system_is_active:
     
     # grab the incoming uwb beacon 
