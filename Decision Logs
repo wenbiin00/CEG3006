@@ -12,3 +12,4 @@ Log:
 5. False positive? Based on how the solution is designed, high degree of false positive for high risk may be detected (Accuracy? Finetuning of algorithm?)
 6. Addressing both sides of interaction: Wearable device will also emit a high volume tweet/beep in response to being marked as high-risk.
 7. Issues with Bluetooth 5.0 for peer to peer communication (Tag-to-Vehicle)
+8. UWB range is too narrow to detect long range vehicle approach or early collision warning at road scale, so change to GNSS (long range) + UWB (short range)
