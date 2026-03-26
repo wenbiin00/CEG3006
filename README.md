@@ -84,7 +84,33 @@ https://www.mdpi.com/2079-9292/13/2/331
 
 ## Real-World Case Study <br>
 <p>
+### USE CASE 1
+V2p wearable: ZoneSafe 
+A real-world use case of Vehicle-to-Pedestrian (V2P) implementation wearable can be observed in industrial safety systems such as ZoneSafe, where workers wear dedicated proximity tags that communicate with nearby vehicles. 
+Forklifts are equipped with detection systems that create a 360-degree safety zone around the vehicle, and when a pedestrian carrying a wearable tag enters this zone, both the driver and the pedestrian receive immediate alerts 
+through in-cab warnings and vibrating tags, allowing both parties to react and avoid potential collisions. Notably, the system is capable of detecting pedestrians even in non-line-of-sight conditions, such as behind walls 
+or obstacles, improving safety in complex environments. (Forklift Proximity Warning System - ZoneSafe, 2026) However, these systems are typically limited to short-range communication and controlled industrial settings. 
+Building upon this concept, the proposed concept extends the wearable V2P approach to urban environments by leveraging LTE/5G communication for low-latency, long-range interaction between pedestrians and vehicles. This 
+enables more advanced features such as trajectory prediction and real-time alerts, enhancing safety in dynamic road scenarios.
   
+References:
+(Forklift Proximity Warning System - ZoneSafe, 2026) Forklift Proximity Warning System - ZoneSafe. (2026, March 19). Zonesafe. 
+https://zonesafe.com/proximity-warning-systems/
+
+### USE CASE 2
+Scenario: Elementary School Morning Drop-Off (7:45 AM)
+8-year-old Emma wears a clip-on safety tag attached to her backpack as she walks to school. The AirTag-sized device contains a BLE 5.0 radio, 9-axis IMU sensor, and LoRaWAN backup.
+As Emma approaches the school crosswalk, BLE beacons mounted on lamp posts detect her tag. Her device immediately switches from low-power mode (1 Hz beacon rate) to high-frequency safety mode (10 Hz). The tag vibrates gently: "You're near a road."
+A sedan approaching at 40 km/h has a vehicle OBU that receives Emma's BLE beacon. The tag's payload identifies her as: USER_TYPE: CHILD | MOTION: WALKING | BATTERY: 87%.
+The driver's dashboard displays: "CHILD DETECTED AHEAD - SLOW TO 25 KM/H"
+Emma's tag vibrates twice as the vehicle approaches within 30 meters. Both parties are now aware—dual-alert system active.
+Meanwhile, the system uses rotating anonymous IDs (changing every 5 minutes) to prevent tracking, similar to the Seeed Studio school badge that successfully protects student privacy while enabling real-time safety.
+If Emma were to fall, her IMU would detect the impact and broadcast an emergency LoRaWAN alert to school staff—just like the fall detection in the airbag belt case study.
+Cost per tag: ~$40 | Infrastructure: Existing school zone beacons + BLE modules
+
+References:
+Seeed Studio, "Wearable BLE + LoRaWAN Trackers: The Ultimate Hybrid for Seamless Indoor Personal Safety," Seeed Studio Blog, Oct. 17, 2025. [Online]. 
+https://www.seeedstudio.com/blog/2025/10/17/wearable-ble-lorawan-trackers-indoor-safety/
 </p>
 <br>
 
