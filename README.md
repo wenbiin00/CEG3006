@@ -81,6 +81,8 @@ https://www.mdpi.com/2079-9292/13/2/331
 
 ## AI Usage <br>
 <p>Insert AI prompts and responses from Gen AI.</p>
+<img width="707" height="647" alt="Screenshot 2026-03-27 at 00 22 15" src="https://github.com/user-attachments/assets/f21112ec-0f6f-4226-b6f3-43dc8ac0e5b0" />
+
 <br>
 
 ## Real-World Case Study <br>
