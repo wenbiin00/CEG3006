@@ -32,7 +32,11 @@ https://www.mdpi.com/2079-9292/13/2/331
 <br>
 
 ## Visuals and Diagrams <br>
-<p>Flow chart for system logic, architecture diagram, maybe some visual on how the final solution should look like. </p>
+<p>Architecture diagram, flow chart for system logic, and some visual on how the final solution should look like. 
+<img width="1825" height="453" alt="image" src="https://github.com/user-attachments/assets/75043afc-d462-4712-92b3-cfd767cd4752" />
+<img width="2453" height="2160" alt="image" src="https://github.com/user-attachments/assets/bc447cb5-1aba-422e-884f-517d1ee697c3" />
+
+</p>
 <br>
 
 ## Decision Log <br>
@@ -63,8 +67,6 @@ https://www.mdpi.com/2079-9292/13/2/331
 | PMIC | Nordic nPM1100 | Li-Po charging, low power | Power management |
 | Battery | Li-Po 500–1000 mAh | 3.7 V nominal | Portable power source |
 
-![gnomed](https://github.com/user-attachments/assets/bae9be1b-aced-4336-bc15-5f7f6c166a2d)
-
 ## AI Usage <br>
 <p>Insert AI prompts and responses from Gen AI.</p>
 <br>
@@ -76,13 +78,14 @@ https://www.mdpi.com/2079-9292/13/2/331
 <br>
 
 ## Functions and Messages <br>
-<p>
+```<p>
+# Pseudocode for Proposed System
 # grab car stats once at startup
-host_vehicle = get_vehicle_telemetry() # gets speed, heading, gps
-warning_threshold_ttc = 2.5 # threshold for collision warning in seconds
-critical_distance = 100.0 # max uwb tracking range in meters
+host_vehicle = get_vehicle_telemetry() # gets vehicle speed, heading, gps
+warning_threshold_ttc = 3 # threshold for collision warning in seconds
+critical_distance = 100.0 # max tracking range in meters
 
-### keep running while the car is on
+# keep running while the car is on
 while system_is_active:
     
     # grab the incoming uwb beacon 
@@ -100,12 +103,12 @@ while system_is_active:
     # figure out the tag's speed from its past few pings
     vru_speed = calculate_speed(vru_message.historical_positions)
     
-    # edge case: tag is moving fast and matching our heading (probably a passenger in a car ahead)
+    # edge case where tag is moving fast and matching our heading (maybe a passenger in a car ahead or the same car)
     if vru_speed > 30.0 and headings_match(host_vehicle.heading, vru_message.heading):
         flag_as_passenger(vru_message.id)
         continue
         
-    # edge case: tag is basically standing still (like waiting at a bus stop)
+    # edge case where tag is basically standing still (like waiting at a bus stop)
     if vru_speed < 0.5:
         flag_as_stationary(vru_message.id)
         continue # just watch them for now, no immediate threat
@@ -119,7 +122,8 @@ while system_is_active:
     
     if not conflict_zone:
         continue # walking parallel on the pavement, all good
-        
+
+    # danger
     # paths cross, figure out when both parties arrive at the crash point
     ttc_vehicle = calculate_time_to_point(host_vehicle, conflict_zone)
     ttc_vru = calculate_time_to_point(vru_message, conflict_zone)
@@ -136,5 +140,6 @@ while system_is_active:
         
         # ping the tag back to buzz the pedestrian
         send_alert_to_tag(vru_message.id, "activate_buzzer")
+```
 </p>
 <br>
