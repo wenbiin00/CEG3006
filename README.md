@@ -33,7 +33,7 @@ https://www.mdpi.com/2079-9292/13/2/331#:~:text=In%20this%20paper%2C%20V2P%20com
 <p>Flow chart for system logic, architecture diagram, maybe some visual on how the final solution should look like. </p>
 <br>
 
-## Reiterations <br>
+## Decision Log <br>
 <ol>
   <li>Drains battery: so we change to a low-footprint and low-power wearable</li>
   <li>May be hard to adopt: as certain demographics may not choose to install/keep updated, therefore we change to wearable</li>
@@ -56,4 +56,10 @@ https://www.mdpi.com/2079-9292/13/2/331#:~:text=In%20this%20paper%2C%20V2P%20com
 ## Real-World Case Study <br>
 <ol>
   
-</ol>
+</ol>3
+
+## Functions and Messages <br>
+<p>
+  
+</p>
+</br>
