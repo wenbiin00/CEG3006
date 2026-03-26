@@ -4,7 +4,7 @@ Flow Chart
 <img width="1920" height="1080" alt="Flowchart of Vehicle-Side Risk Detection and Alert Logic" src="https://github.com/user-attachments/assets/3dbbf06f-2fef-48a4-82d9-68073587573d" />
 
 
-## Functions and Messages <br>
+Functions and Messages <br>
 ```<p>
 # Pseudocode for Proposed System
 # grab car stats once at startup
