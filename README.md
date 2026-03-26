@@ -33,8 +33,9 @@ https://www.mdpi.com/2079-9292/13/2/331
 
 ## Visuals and Diagrams <br>
 <p>Architecture diagram, flow chart for system logic, and some visual on how the final solution should look like. 
-<img width="1825" height="453" alt="image" src="https://github.com/user-attachments/assets/75043afc-d462-4712-92b3-cfd767cd4752" />
-<img width="2453" height="2160" alt="image" src="https://github.com/user-attachments/assets/bc447cb5-1aba-422e-884f-517d1ee697c3" />
+<img width="2595" height="653" alt="image" src="https://github.com/user-attachments/assets/ab674292-be11-4e8f-a7cb-f39e666c521c" />
+<img width="2385" height="2005" alt="image" src="https://github.com/user-attachments/assets/a604fa07-7518-4ea5-8e87-9b76d8f5fe36" />
+
 
 </p>
 <br>
