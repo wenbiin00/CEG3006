@@ -15,13 +15,21 @@
 
 ## Literature Review <br>
 <p>~200-300 words, require research and reference. </p>
-<p>Vehicle-to-Pedestrian (V2P) communication has emerged as an important component of intelligent transportation systems aimed at improving the safety of vulnerable road users (VRUs), including pedestrians and cyclists. V2P systems enable vehicles and pedestrians to exchange real-time information such as location, speed, and trajectory to predict potential collisions and provide timely warnings. In Vulnerable Road User Safety Using Mobile Phones with Vehicle-to-VRU Communication, smartphone-based V2P systems are proposed as a practical solution where mobile devices carried by pedestrians communicate with nearby vehicles through wireless V2X networks. These systems allow early detection of dangerous interactions between vehicles and pedestrians and can significantly improve situational awareness for both parties. However, the study highlights limitations including high energy consumption, dependence on smartphone availability, and reduced reliability due to GPS inaccuracies.
+<p>Vehicle-to-Pedestrian (V2P) communication has emerged as a key solution for improving the safety of vulnerable road users (VRUs) by enabling real-time information exchange between vehicles and pedestrians. In Vulnerable 
+Road User Safety Using Mobile Phones with Vehicle-to-VRU Communication, smartphone-based V2P systems are proposed as a practical approach, where pedestrians use mobile devices to transmit their position and receive safety 
+alerts through V2X networks. These systems enhance situational awareness and allow early detection of potential collisions. However, the study highlights several limitations, including high energy consumption, reliance on 
+user participation, and reduced positioning accuracy due to GPS constraints. (Rashid et al., 2024)
 
-Similarly, V2P Collision Warnings for Distracted Pedestrians: A Comparative Study with Traditional Auditory Alerts demonstrates that personalized digital warnings delivered through connected devices can improve pedestrian reaction time compared to conventional auditory alerts such as vehicle horns. While such approaches show promise in enhancing pedestrian safety, current implementations still face several practical challenges.
+Similarly, V2P Collision Warnings for Distracted Pedestrians: A Comparative Study with Traditional Auditory Alerts evaluates the effectiveness of V2P warnings compared to conventional auditory signals such as vehicle horns. 
+The results show that V2P alerts significantly improve response time, particularly for distracted pedestrians using smartphones, and are more effective in noisy urban environments . This demonstrates the potential of direct 
+communication-based safety systems over traditional methods. (Certad et al., 2025)
 
-Many existing V2P solutions rely on onboard vehicle sensors such as cameras, radar, or LiDAR to detect pedestrians. These perception systems may fail in scenarios involving physical obstructions, poor lighting conditions, or non-line-of-sight situations. Meanwhile, smartphone-based applications may suffer from high battery consumption and low adoption rates among vulnerable populations such as children or the elderly.
+Despite these advancements, current V2P implementations still face practical challenges. Sensor-based systems relying on cameras, radar, or LiDAR are limited by line-of-sight constraints and may fail in occluded environments,
+while smartphone-based approaches suffer from high battery consumption and inconsistent user adoption. These limitations highlight the need for a more reliable and energy-efficient solution.
 
-Therefore, there is a need for alternative V2P solutions that provide reliable, low-latency communication while minimizing power consumption and improving user accessibility. This motivates the development of a dedicated wearable communication device capable of enabling efficient vehicle-pedestrian interaction and enhancing road safety.
+To address these gaps, this project proposes a low-power, dedicated wearable safety tag that leverages cellular LTE/5G communication to enable low-latency interaction between pedestrians and vehicles. By combining accurate 
+trajectory tracking with dual alert mechanisms for both drivers and pedestrians, the proposed system aims to provide a more robust and accessible V2P solution for real-world deployment.
+
 
 References:
 (Certad et al., 2025) Certad, N., Del Re, E., Varughese, J., & Olaverri-Monreal, C. (2025). V2P collision warnings for distracted pedestrians: A comparative study with traditional auditory alerts. arXiv. 
@@ -63,8 +71,10 @@ https://www.mdpi.com/2079-9292/13/2/331
 | GNSS Module | u-blox MIA-M10Q | Multi-GNSS, ~1.5 m accuracy, 5–10 Hz update | Provides global positioning |
 | UWB Module | Qorvo DW3110 | ±10 cm accuracy, up to 6.8 Mbps | Enables short-range precision tracking |
 | IMU | Bosch BMI270 | 6-axis, low power, 50–100 Hz sampling | Supports motion tracking |
-| BLE | Integrated (nRF5340) | ~100–150 m range, low latency | Vehicle discovery and messaging |
+| Communication (Prototype) | BLE (nRF5340) | ~100–150 m range, low latency | Used for vehicle discovery and messaging |
+| Communication (Deployment) | C-V2X Transceiver (e.g., Quectel AG15) | PC5 sidelink, low latency (<100 ms), high reliability | Enables direct vehicle-to-pedestrian communication |
 | Buzzer | CUI CMT-8540S-SMT | 100 dBA @ 10 cm, 4 kHz | Audible warning |
+| Vibration Motor | Coin motor | 3 V operation | Provides haptic feedback |
 | PMIC | Nordic nPM1100 | Li-Po charging, low power | Power management |
 | Battery | Li-Po 500–1000 mAh | 3.7 V nominal | Portable power source |
 
