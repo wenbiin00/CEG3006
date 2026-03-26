@@ -14,7 +14,6 @@
 <br>
 
 ## Literature Review <br>
-<p>~200-300 words, require research and reference. </p>
 <p>Vehicle-to-Pedestrian (V2P) communication has emerged as a key solution for improving the safety of vulnerable road users (VRUs) by enabling real-time information exchange between vehicles and pedestrians. In Vulnerable 
 Road User Safety Using Mobile Phones with Vehicle-to-VRU Communication, smartphone-based V2P systems are proposed as a practical approach, where pedestrians use mobile devices to transmit their position and receive safety 
 alerts through V2X networks. These systems enhance situational awareness and allow early detection of potential collisions. However, the study highlights several limitations, including high energy consumption, reliance on 
@@ -29,7 +28,6 @@ while smartphone-based approaches suffer from high battery consumption and incon
 
 To address these gaps, this project proposes a low-power, dedicated wearable safety tag that leverages cellular LTE/5G communication to enable low-latency interaction between pedestrians and vehicles. By combining accurate 
 trajectory tracking with dual alert mechanisms for both drivers and pedestrians, the proposed system aims to provide a more robust and accessible V2P solution for real-world deployment.
-
 
 References:
 (Certad et al., 2025) Certad, N., Del Re, E., Varughese, J., & Olaverri-Monreal, C. (2025). V2P collision warnings for distracted pedestrians: A comparative study with traditional auditory alerts. arXiv. 
