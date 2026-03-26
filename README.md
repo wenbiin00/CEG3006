@@ -55,6 +55,9 @@ https://www.mdpi.com/2079-9292/13/2/331
   <li>False positive? Based on how the solution is designed, high degree of false positive for high risk may be detected (Accuracy? Finetuning of algorithm?)</li>
   <li>Addressing both sides of interaction: Wearable device will also emit a high volume tweet/beep in response to being marked as high-risk.</li>
   <li>Issues with Bluetooth 5.0 for peer to peer communication (Tag-to-Vehicle)</li>
+  <li>UWB range is too narrow to detect long range vehicle approach or early collision warning at road scale, so change to GNSS (long range) + UWB (short range)</li>
+  <li>User Type Classification: Manual vs. Automatic Gait Analysis</li>
+  <li>Privacy vs. Functionality Trade-off in Beacon Payload</li>
 </p>
 <br>
 
