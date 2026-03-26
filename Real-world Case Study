@@ -27,3 +27,7 @@ Emma's tag vibrates twice as the vehicle approaches within 30 meters. Both parti
 Meanwhile, the system uses rotating anonymous IDs (changing every 5 minutes) to prevent tracking, similar to the Seeed Studio school badge that successfully protects student privacy while enabling real-time safety.
 If Emma were to fall, her IMU would detect the impact and broadcast an emergency LoRaWAN alert to school staff—just like the fall detection in the airbag belt case study.
 Cost per tag: ~$40 | Infrastructure: Existing school zone beacons + BLE modules
+
+References:
+Seeed Studio, "Wearable BLE + LoRaWAN Trackers: The Ultimate Hybrid for Seamless Indoor Personal Safety," Seeed Studio Blog, Oct. 17, 2025. [Online]. 
+https://www.seeedstudio.com/blog/2025/10/17/wearable-ble-lorawan-trackers-indoor-safety/
