@@ -61,6 +61,7 @@ https://www.mdpi.com/2079-9292/13/2/331#:~:text=In%20this%20paper%2C%20V2P%20com
 | PMIC | Nordic nPM1100 | Li-Po charging, low power | Power management |
 | Battery | Li-Po 500–1000 mAh | 3.7 V nominal | Portable power source |
 
+![gnomed](https://github.com/user-attachments/assets/bae9be1b-aced-4336-bc15-5f7f6c166a2d)
 
 ## AI Usage <br>
 <p>Insert AI prompts and responses from Gen AI.</p>
