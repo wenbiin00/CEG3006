@@ -48,6 +48,21 @@ https://www.mdpi.com/2079-9292/13/2/331#:~:text=In%20this%20paper%2C%20V2P%20com
 
 ## Hardware Parameters <br>
 <p>Need research for this section as well. Create a table and fill it in with possible hardware implementations and their respective parameters.</p>
+| Module | Hardware Component | Selected Device | Function | Specifications | 
+| --- | --- | --- | --- | --- | 
+| Processing Unit | Microcontroller | Nordic nRF5340 | Central controller for sensor fusion, communication handling, and alert logic |Dual-core Cortex-M33 (128 MHz), 1 MB Flash, 512 KB RAM, integrated BLE 5.4, ultra-low power modes |
+| Positioning Unit | GNSS | u-blox MIA-M10Q | Provides long range global positioning for pedestrian tracking and trajectory estimation | Multi-constellation (GPS, GLONASS, Galileo, BeiDou), ~1.5 m accuracy, up to 10 Hz update rate, ultra-low power |
+| Positioning Unit | UWB Module | Qorvo DW3110 | Enables high-precision positioning in close-range conflict zones | 6.0–8.5 GHz, ±10 cm accuracy, up to 6.8 Mbps, low power | 
+| Motion Sensing | IMU | Bosch BMI270 | Improves tracking during GNSS signal degradation and supports motion estimation | 6-axis IMU, 50–100 Hz typical sampling, ultra-low power | 
+| Communication Unit | BLE (integrated in MCU) | nRF5340 BLE | Used for vehicle discovery and low-latency beaconing in prototype setup | BLE 5.3/5.4, ~100–150 m range (open field), <20–50 ms latency (target), 100–200 ms advertising interval |
+| Alert System | Acoustic Buzzer | CUI CMT-8540S-SMT | Provides loud audible warning in urban environments | 4 kHz, up to 100 dBA @ 10 cm, 5 V, ~150 mA | 
+| Alert System | Vibration Motor | Coin Vibration motor | Provides haptic feedback for redundancy and accessibility | 3 V operation, low power |
+| Power Management | PMIC/Charger | Nordic nPM1100 | Ensures stable power delivery and safe battery operation | Li-Po charging (20-400mA), voltage regulation, protection features |
+| Energy | Battery | Li-Po (500–1000 mAh) | Provides sufficient runtime for wearable operation (approx. 12–24 hours typical use) | 3.7 V nominal, rechargeable | 
+| Antenna System | GNSS Antenna | Ceramic chip antenna | Enables reliable satellite signal reception | Multi-band GNSS support | 
+| Antenna System | UWB Antenna | UWB compact antenna | Supports precise ranging performance | 6–8.5 GHz compatible | 
+| Antenna System | BLE Antenna | PCB/chip antenna | Enables wireless communication with vehicle system | 2.4GHz |
+| Casing | Wearable Casing | Werable Casing | Ensures portability, durability, and user comfort | |
 <br>
 
 ## AI Usage <br>
