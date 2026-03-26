@@ -1,5 +1,4 @@
-Use case depicting your system in a real-world scenario [100-200 words]
-
+### USE CASE 1
 V2p wearable: ZoneSafe 
 A real-world use case of Vehicle-to-Pedestrian (V2P) implementation wearable can be observed in industrial safety systems such as ZoneSafe, where workers wear dedicated proximity tags that communicate with nearby vehicles. 
 Forklifts are equipped with detection systems that create a 360-degree safety zone around the vehicle, and when a pedestrian carrying a wearable tag enters this zone, both the driver and the pedestrian receive immediate alerts 
@@ -14,7 +13,7 @@ https://zonesafe.com/proximity-warning-systems/
 
 ‌
 
-
+### USE CASE 2
 Scenario: Elementary School Morning Drop-Off (7:45 AM)
 8-year-old Emma wears a clip-on safety tag attached to her backpack as she walks to school. The AirTag-sized device contains a BLE 5.0 radio, 9-axis IMU sensor, and LoRaWAN backup.
 As Emma approaches the school crosswalk, BLE beacons mounted on lamp posts detect her tag. Her device immediately switches from low-power mode (1 Hz beacon rate) to high-frequency safety mode (10 Hz). The tag vibrates gently: "You're near a road."
