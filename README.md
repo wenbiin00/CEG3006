@@ -24,8 +24,10 @@ Many existing V2P solutions rely on onboard vehicle sensors such as cameras, rad
 Therefore, there is a need for alternative V2P solutions that provide reliable, low-latency communication while minimizing power consumption and improving user accessibility. This motivates the development of a dedicated wearable communication device capable of enabling efficient vehicle-pedestrian interaction and enhancing road safety.
 
 References:
-https://arxiv.org/html/2504.13906v1
-https://www.mdpi.com/2079-9292/13/2/331#:~:text=In%20this%20paper%2C%20V2P%20communication,and%20recommendations%20in%20Section%206
+(Certad et al., 2025) Certad, N., Del Re, E., Varughese, J., & Olaverri-Monreal, C. (2025). V2P collision warnings for distracted pedestrians: A comparative study with traditional auditory alerts. arXiv. 
+https://arxiv.org/abs/2504.13906
+(Rashid et al., 2024) Rashid, M., Al-Khateeb, H., Alazab, M., & Alazab, M. (2024). Vulnerable road user safety using mobile phones with vehicle-to-VRU communication. Electronics, 13(2), 331. 
+https://www.mdpi.com/2079-9292/13/2/331
 </p>
 <br>
 
