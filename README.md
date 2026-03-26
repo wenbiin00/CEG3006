@@ -34,7 +34,7 @@ https://www.mdpi.com/2079-9292/13/2/331#:~:text=In%20this%20paper%2C%20V2P%20com
 <br>
 
 ## Decision Log <br>
-<ol>
+<p>
   <li>Drains battery: so we change to a low-footprint and low-power wearable</li>
   <li>May be hard to adopt: as certain demographics may not choose to install/keep updated, therefore we change to wearable</li>
   <li>Communication protocol/location tracking: Standard GNSS not accurate enough, therefore we change to UWB (Centimeter level)</li>
@@ -42,7 +42,7 @@ https://www.mdpi.com/2079-9292/13/2/331#:~:text=In%20this%20paper%2C%20V2P%20com
   <li>False positive? Based on how the solution is designed, high degree of false positive for high risk may be detected (Accuracy? Finetuning of algorithm?)</li>
   <li>Addressing both sides of interaction: Wearable device will also emit a high volume tweet/beep in response to being marked as high-risk.</li>
   <li>Issues with Bluetooth 5.0 for peer to peer communication (Tag-to-Vehicle)</li>
-</ol>
+</p>
 <br>
 
 
@@ -55,9 +55,9 @@ https://www.mdpi.com/2079-9292/13/2/331#:~:text=In%20this%20paper%2C%20V2P%20com
 <br>
 
 ## Real-World Case Study <br>
-<ol>
+<p>
   
-</ol>
+</p>
 <br>
 
 ## Functions and Messages <br>
