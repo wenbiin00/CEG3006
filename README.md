@@ -82,6 +82,7 @@ https://www.mdpi.com/2079-9292/13/2/331
 
 ## Real-World Case Study <br>
 <p>
+  
 ### USE CASE 1
 V2p wearable: ZoneSafe 
 A real-world use case of Vehicle-to-Pedestrian (V2P) implementation wearable can be observed in industrial safety systems such as ZoneSafe, where workers wear dedicated proximity tags that communicate with nearby vehicles. 
