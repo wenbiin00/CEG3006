@@ -2,3 +2,13 @@ A chronological record of the evolution of your proposed system. It should captu
 technical decisions, alternatives, rejected approaches, trade-offs, refinements, and integration
 problems. The log should have at least 10 entries and should include references to the repository
 documentation
+
+
+Log:
+1. Drains battery: so we change to a low-footprint and low-power wearable
+2. May be hard to adopt: as certain demographics may not choose to install/keep updated, therefore we change to wearable
+3. Communication protocol/location tracking: Standard GNSS not accurate enough, therefore we change to UWB (Centimeter level)
+4. Broadcasting frequency: High battery drain detected at 10hz broadcasting. Modifying to lower suitable frequency or adaptive frequency based on nearby vehicles.
+5. False positive? Based on how the solution is designed, high degree of false positive for high risk may be detected (Accuracy? Finetuning of algorithm?)
+6. Addressing both sides of interaction: Wearable device will also emit a high volume tweet/beep in response to being marked as high-risk.
+7. Issues with Bluetooth 5.0 for peer to peer communication (Tag-to-Vehicle)
