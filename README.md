@@ -49,6 +49,7 @@ https://www.mdpi.com/2079-9292/13/2/331#:~:text=In%20this%20paper%2C%20V2P%20com
 ## Hardware Parameters <br>
 <p>Need research for this section as well. Create a table and fill it in with possible hardware implementations and their respective parameters.</p>
 <br>
+
 | Component | Selected Device | Key Specs | Purpose |
 |---|---|---|---|
 | MCU | Nordic nRF5340 | Dual-core Cortex-M33, 128 MHz, 1 MB Flash, BLE 5.4 | Main controller for processing and communication |
