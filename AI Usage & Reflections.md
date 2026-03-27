@@ -36,4 +36,4 @@ My key takeaway is that automotive safety systems require balancing multiple com
 the most technically advanced but rather those that make strategic trade-offs aligned with real-world constraints. 
 <br>
 <ins>Yan Ming</ins> <br>
-Through working on this project, I learnt more about the V2X communication, how it helps in improving road safety and different types of V2X implementations, particularly V2P. 
+Through working on this project, I learnt more about the V2X communication, how it helps in improving road safety and different types of V2X implementations, particularly V2P. Through literature research, I have also learned about limitations involving existing V2P wearable solution, which involves factors such as battery consumption, position accuracy and that personalized V2P alerts are more effective than traditional auditory warnings, especially for distracted pedestrians, as they provide direct and timely notifications. This project also helped me appreciate the importance of integrating multiple technologies, such as GNSS, IMU, and UWB, to improve positioning reliability. 
