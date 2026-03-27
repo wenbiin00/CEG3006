@@ -10,7 +10,21 @@
 </ul>
 
 ## Brief Description of Solution <br>
-<p>Current Vehicle-to-Pedestrian solutions relying on onboard sensors are limited by physical obstructions, while smartphone applications suffer from high battery drain and low adoption rates among vulnerable demographics. Our solution is a low-power, dedicated wearable safety tag designed for the safety of pedestrians and drivers alike. Utilizing BLE protocols, the tag ensures efficient low power communication with approaching vehicles without the use of complicated and high power components. It provides high accuracy location and trajectory tracking and alerting of both driver and pedestrians, emitting a high volume acoustic warning to the pedestrian while simultaneously triggering an alert within the vehicle's dashboard when a high risk trajectory is detected.</p>
+<p>
+Current Vehicle-to-Pedestrian (V2P) solutions fall into two broad categories, each with significant drawbacks. Onboard sensor-based systems (cameras, radar and LiDAR) are constrained by line-of-sight requirements 
+and fail under occlusion or poor lighting. Smartphone-based V2X applications, while more accessible, suffer from high battery drain and low adoption rates among vulnerable populations such as young children and the elderly.
+
+Our solution is a low-power, dedicated wearable safety tag that addresses these gaps. Using Bluetooth Low Energy (BLE) for vehicle discovery and Ultra-Wideband (UWB) for centimetre-level ranging, the tag continuously estimates
+the relative position and trajectory between the pedestrian and approaching vehicles. When a high-risk collision trajectory is detected, it simultaneously triggers an acoustic alert on the wearable and broadcasts a warning to the
+vehicle's dashboard unit, ensuring both parties are notified in real time with a combined detection-to-alert latency of under 200ms.
+
+Unlike smartphone-based systems, the tag is a purpose-built device with minimal power draw, designed for all-day wearability without frequent recharging. Unlike sensor-only vehicle systems, it does not rely on line-of-sight and 
+remains effective in obstructed or low-visibility environments.
+
+The tag operates adaptively: it remains in a low-power BLE scanning state when no vehicles are nearby and escalates to active UWB ranging when a vehicle is detected. Alert thresholds are tiered: a MEDIUM alert 
+(intermittent buzz + dashboard notification) is issued when Time-to-Collision drops below 4 seconds and a HIGH alert (continuous tone + dashboard alarm) when it drops below 2 seconds. This dual-sided alerting makes the system
+robust even when one party is distracted, ensuring it serves as a practical and inclusive safety solution for all pedestrian demographics.
+</p>
 <br>
 
 ## Literature Review <br>
@@ -38,12 +52,9 @@ https://www.mdpi.com/2079-9292/13/2/331
 <br>
 
 ## Visuals and Diagrams <br>
-<p>Architecture diagram, flow chart for system logic, and some visual on how the final solution should look like. 
+<p>Architecture diagram and flow chart for system logic. 
 <img width="1292" height="316" alt="image" src="https://github.com/user-attachments/assets/c845a27f-59f0-4e29-8816-103a6632a80e" />
-
 <img width="2385" height="2005" alt="image" src="https://github.com/user-attachments/assets/a604fa07-7518-4ea5-8e87-9b76d8f5fe36" />
-
-
 </p>
 <br>
 
@@ -64,7 +75,7 @@ https://www.mdpi.com/2079-9292/13/2/331
 
 
 ## Hardware Parameters <br>
-<p>Need research for this section as well. Create a table and fill it in with possible hardware implementations and their respective parameters.</p>
+<p>Tables filled with possible hardware implementations and their respective parameters.</p>
 <br>
 
 | Module | Hardware Component | Selected Device | Function | Specifications | Electrical Specifications |
@@ -85,11 +96,120 @@ https://www.mdpi.com/2079-9292/13/2/331
 | Antenna System | UWB Antenna | UWB compact antenna | Supports precise ranging performance | 6–8.5 GHz compatible | Passive |
 | Antenna System | BLE Antenna | PCB/chip antenna | Enables wireless communication with vehicle system | 2.4GHz | Passive |
 | Casing | Wearable Casing | Werable Casing | Ensures portability, durability, and user comfort | <50 × 30 × 12 mm, <25 g, IP54 |
+<br>
+
+### Additional Protocols and Parameters<br>
+| Parameters | Value |
+| --- | --- |
+| GNSS Accuracy | ~1.5 m Circular Error Probability (CEP) |
+| UWB Accuracy | +- 10 cm (line of sight) |
+| IMU Sampling Rate | 50–100 Hz |
+| GNSS Update Rate | 5–10 Hz |
+| UWB Update Rate | 5–10 Hz |
+| Communication (Prototype) | Bluetooth Low Energy (BLE) |
+| BLE Range | ~100–150 m (open environment) |
+| BLE Latency | <20–50 ms |
+| Communication (Deployment) | Cellular V2X (C-V2X, PC5 sidelink) |
+| C-V2X Range | ~50–300 m (urban conditions) |
+| C-V2X Latency | <20–100 ms |
+| Message Broadcast Rate | ~10 Hz (VRU beacon) |
+| Alert Type | Acoustic (buzzer) + Haptic (vibration) |
+| Alert Sound Level | ~100 dBA @ 10 cm |
+| Power Source | 3.7 V Li-Po battery |
+| Battery Capacity | 500–1000 mAh |
+| Estimated Battery Life | ~12–24 hours |
+| Operating Voltage | 3.3 V system rail (5 V for buzzer) |
+| Peak Current Consumption | ~150–250 mA (alert + UWB active) |
+| Operating Temperature | −20°C to 60°C |
 
 ## AI Usage <br>
 <p>Insert AI prompts and responses from Gen AI.</p>
-<img width="707" height="647" alt="Screenshot 2026-03-27 at 00 22 15" src="https://github.com/user-attachments/assets/f21112ec-0f6f-4226-b6f3-43dc8ac0e5b0" />
+Demonstrate how responsible use of AI tools supported your project work and how you verified the
+results. This section should include
+• List of used AI tools and how (in which project phases) you have used them
+• Examples of prompts and generated outputs [at least 3]
+• Examples of identified weaknesses or hallucinations [at least 3]
+• Individual reflection and own contributions [approx. 5-10 sentences per team member]
 
+### **AI tools used:**
+ChatGPT
+
+### **Prompts and generated outputs:**
+1. What are some ways to improve the safety and comfort of pedestrians, cyclists, or wheelchair users for a Vehicle-to-Pedestrian (V2P) application? <br>
+<img width="707" height="647" alt="Screenshot 2026-03-27 at 00 22 15" src="https://github.com/user-attachments/assets/570ac5b5-13cf-4174-835b-a0b3f8788677" /> <br>
+2. I am designing a Vehicle-to-Pedestrian (V2P) safety system using a wearable tag and V2X communication. The vehicle will perform risk assessment based on distance, blind spot detection, and Time-To-Collision (TTC). Can you guide me on how to structure a flowchart for the vehicle-side decision logic?Suggest the key steps and decision points I should include, such as validation, filtering, and risk evaluation. <br>
+**Generated Response**
+```
+Start with system initialization, where the vehicle-side module sets up V2X communication and prepares to receive wearable tag messages. After that, the first main step should be message reception from the wearable tag.
+
+From there, add a message validation decision point. This checks whether the received V2P message is complete, current, and from a recognized or valid source. If invalid, the logic should discard it and return to waiting for the next message.
+
+If the message is valid, move into a basic filtering stage. This is where the vehicle determines whether the wearable tag is even relevant. Good filtering questions include:
+
+Is the VRU within the vehicle’s detection range?
+Is the signal recent enough to use?
+Is the VRU in a road-related context rather than far outside the conflict area?
+
+Only if it passes this filtering stage should the logic continue.
+
+Next, include a spatial or geometric risk check. This can evaluate whether the pedestrian is inside the vehicle’s blind spot or projected conflict zone. If not, the system can continue monitoring without triggering an alert.
+
+If the VRU is in a possible danger zone, the next block should be trajectory and motion analysis. Here the system estimates relative movement between the vehicle and the VRU. After that, add a Time-To-Collision (TTC) calculation step.
+
+Then place a decision point such as:
+
+Is TTC below the warning threshold?
+Is the collision risk level high enough to justify an alert?
+
+If yes, the flow should proceed to driver alert generation and then send an alert back to the wearable tag. If no, the system should continue monitoring and loop back for the next message.
+
+A good overall order is:
+Initialize → Receive Message → Validate → Filter by Range/Relevance → Check Blind Spot/Conflict Zone → Predict Motion → Calculate TTC → Compare Against Threshold → Trigger Alerts / Continue Monitoring
+
+For the actual diagram, use:
+- ovals for start/end
+- rectangles for processes
+- diamonds for yes/no decisions
+- arrows for flow direction
+
+A strong extra touch is to make the “no” branches return to a monitoring loop instead of ending, so the system clearly behaves continuously in real time.
+```
+<br>
+
+3. Does the block diagram consists of all modules and components needed for the wearable to function normally?
+<img width="562" height="620" alt="image" src="https://github.com/user-attachments/assets/f9eecfc7-0e57-4709-86cd-cd195bd15f15" />
+<img width="500" height="690" alt="image" src="https://github.com/user-attachments/assets/eb26fb85-e1b0-4dd9-a939-aa1275d0481e" />
+<img width="780" height="361" alt="image" src="https://github.com/user-attachments/assets/8b90b8f0-fe45-4bd8-a50b-e42ce81c324d" />
+<br>
+
+
+
+## **Identified weaknesses or hallucinations:**
+1. The initial development of the block diagram consisted of incomplete/missing system components, critical to make the wearable function as a whole, hence repeated prompts had to be made to confirm functionality of system.
+2. Some of the generated outputs are generic in details, and do not contain the full details unless further prompted.
+3. Accuracy of component specifications such as latency, range, consumption may be inaccurate as the values are approximated from values found online, hence specifications are dependent on assumptions and not tied to readily available datasheets.
+<br>
+
+## **Reflection and Contribution:** 
+<ins>wenbin</ins> <br>
+Working on this V2P wearable tag project significantly deepened my understanding of how automotive safety systems must balance technical performance, user privacy, and practical deployability. 
+My primary contribution was conducting extensive research into real-world case studies—from industrial ZoneSafe tags to clinical elderly care systems—which transformed our initial abstract concept
+into an evidence-based design grounded in proven technologies, as well as contributing to the development of the project idea and refinement. Through this project, I learned that real-world deployment constraints (cost, 
+infrastructure availability, user adoption friction) must be considered as early as technical performance requirements—a lesson learned after initially proposing solutions that were technically sound but economically impractical. 
+My key takeaway is that automotive safety systems require balancing multiple competing priorities (performance vs. privacy vs. cost vs. usability), and the most successful designs aren't necessarily 
+the most technically advanced but rather those that make strategic trade-offs aligned with real-world constraints. 
+<br>
+
+<ins>Yan Ming</ins> <br>
+Through working on this project, I learnt more about the V2X communication, how it helps in improving road safety and different types of V2X implementations, particularly V2P. Through literature research, I have also learned about limitations involving existing V2P wearable solution, which involves factors such as battery consumption, position accuracy and that personalized V2P alerts are more effective than traditional auditory warnings, especially for distracted pedestrians, as they provide direct and timely notifications. This project also helped me appreciate the importance of integrating multiple technologies, such as GNSS, IMU, and UWB, to improve positioning reliability, showed me the pros and cons of using C-V2X or BLE and direct or network based connection and how trade offs can archieve a better result for pedestrian safety. I contributed to researching existing V2P solutions for literature review and improvement of initial design.
+<br>
+
+<ins>Darrence</ins> <br>
+During this project, I gained a deeper understanding of how Vehicle-to-Everything (V2X) communication can be applied to improve pedestrian safety particularly through Vehicle-to-Pedestrian (V2P) systems. I learned how different components such as GNSS, IMU and communication protocols work together to provide real-time positioning and risk detection. One key takeaway for me was how important it is to design systems that go beyond simple distance-based detection as this can lead to a high number of false positives. Instead, incorporating concepts such as blind spot detection, trajectory prediction and Time-To-Collision (TTC) allows for more accurate and reliable safety alerts.I also learned the importance of balancing technical performance with real-world constraints such as cost, power consumption and infrastructure requirements making it more obvious for proper balancing. For example, while technologies like Ultra-Wideband (UWB) offer higher accuracy, they may not always be practical without supporting infrastructure which led us to consider hybrid solutions. Additionally, this project helped me understand how system design is an iterative process where initial ideas are continuously refined based on identified limitations and trade-offs. Overall, this project improved my ability to think critically about system integration and how multiple technologies can be combined to create a more effective and practical solution.
+<br>
+
+<ins>Eric</ins> <br>
+Working on this Vehicle-to-Pedestrian wearable tag project provided me with useful insights into iterative processes of designing safety-critical automotive systems. My primary contributions involved conducting research on existing V2P solutions to identify gaps and possible improvements, as well as researching specific hardware components to ensure our proposed wearable was feasible in terms of design and economy. I also translated our flowchart into pseudocode and maintained the project decision log to track our chronological records and improvements/changes. Through the hardware selection process and writing the pseudocode, I learned exactly how strict power and latency constraints dictate the system architecture, such as why we had to opt for a BLE and UWB hybrid model instead of a powerful cellular module. Documenting our improvements/changes in the decision log reinforced my understanding that effective engineering is rarely about choosing the most advanced technology possible, but rather making continuous, justifiable refinements to balance performance, cost, and user adoption.
 <br>
 
 ## Real-World Case Study <br>
