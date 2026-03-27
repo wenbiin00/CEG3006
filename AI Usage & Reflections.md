@@ -9,7 +9,7 @@ results. This section should include
 ChatGPT
 
 ## **Prompts and generated outputs:**
-1. What are some ways to improve the safety and comfort of pedestrians, cyclists, or wheelchair users for a Vehicle-to-Pedestrian (V2P) application?
+1. What are some ways to improve the safety and comfort of pedestrians, cyclists, or wheelchair users for a Vehicle-to-Pedestrian (V2P) application? <br>
 <img width="707" height="647" alt="Screenshot 2026-03-27 at 00 22 15" src="https://github.com/user-attachments/assets/570ac5b5-13cf-4174-835b-a0b3f8788677" /> <br>
 2. <br>
 3. Does the block diagram consists of all modules and components needed for the wearable to function normally?
