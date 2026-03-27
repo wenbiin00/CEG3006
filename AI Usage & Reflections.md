@@ -11,11 +11,10 @@ ChatGPT
 ## **Prompts and generated outputs:**
 1. What are some ways to improve the safety and comfort of pedestrians, cyclists, or wheelchair users for a Vehicle-to-Pedestrian (V2P) application? <br>
 <img width="707" height="647" alt="Screenshot 2026-03-27 at 00 22 15" src="https://github.com/user-attachments/assets/570ac5b5-13cf-4174-835b-a0b3f8788677" /> <br>
-2. <br>
-```
-**Prompt**
-I am designing a Vehicle-to-Pedestrian (V2P) safety system using a wearable tag and V2X communication. The vehicle will perform risk assessment based on distance, blind spot detection, and Time-To-Collision (TTC). Can you guide me on how to structure a flowchart for the vehicle-side decision logic?Suggest the key steps and decision points I should include, such as validation, filtering, and risk evaluation. <br>
+2. I am designing a Vehicle-to-Pedestrian (V2P) safety system using a wearable tag and V2X communication. The vehicle will perform risk assessment based on distance, blind spot detection, and Time-To-Collision (TTC). Can you guide me on how to structure a flowchart for the vehicle-side decision logic?Suggest the key steps and decision points I should include, such as validation, filtering, and risk evaluation. <br>
 **Generated Response**
+<br>
+```
 Start with system initialization, where the vehicle-side module sets up V2X communication and prepares to receive wearable tag messages. After that, the first main step should be message reception from the wearable tag.
 
 From there, add a message validation decision point. This checks whether the received V2P message is complete, current, and from a recognized or valid source. If invalid, the logic should discard it and return to waiting for the next message.
