@@ -12,7 +12,7 @@ ChatGPT
 1. What are some ways to improve the safety and comfort of pedestrians, cyclists, or wheelchair users for a Vehicle-to-Pedestrian (V2P) application? <br>
 <img width="707" height="647" alt="Screenshot 2026-03-27 at 00 22 15" src="https://github.com/user-attachments/assets/570ac5b5-13cf-4174-835b-a0b3f8788677" /> <br>
 2. <br>
-'''
+```
 **Prompt**
 I am designing a Vehicle-to-Pedestrian (V2P) safety system using a wearable tag and V2X communication. The vehicle will perform risk assessment based on distance, blind spot detection, and Time-To-Collision (TTC). Can you guide me on how to structure a flowchart for the vehicle-side decision logic?Suggest the key steps and decision points I should include, such as validation, filtering, and risk evaluation. <br>
 **Generated Response**
@@ -49,7 +49,8 @@ For the actual diagram, use:
 - arrows for flow direction
 
 A strong extra touch is to make the “no” branches return to a monitoring loop instead of ending, so the system clearly behaves continuously in real time.
-'''
+```
+<br>
 3. Does the block diagram consists of all modules and components needed for the wearable to function normally?
 <img width="562" height="620" alt="image" src="https://github.com/user-attachments/assets/f9eecfc7-0e57-4709-86cd-cd195bd15f15" />
 <img width="500" height="690" alt="image" src="https://github.com/user-attachments/assets/eb26fb85-e1b0-4dd9-a939-aa1275d0481e" />
