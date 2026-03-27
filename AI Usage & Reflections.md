@@ -10,9 +10,7 @@ ChatGPT
 
 Prompts and generated outputs:
 1. What are some ways to improve the safety and comfort of pedestrians, cyclists, or wheelchair users for a Vehicle-to-Pedestrian (V2P) application?
-
-<img width="1920" height="1080" alt="AI Prompt 1" src="" />
-
+<img width="707" height="647" alt="Screenshot 2026-03-27 at 00 22 15" src="https://github.com/user-attachments/assets/570ac5b5-13cf-4174-835b-a0b3f8788677" />
 2. 
 3. 
 
