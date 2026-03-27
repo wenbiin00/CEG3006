@@ -10,16 +10,16 @@ ChatGPT
 
 Prompts and generated outputs:
 1. What are some ways to improve the safety and comfort of pedestrians, cyclists, or wheelchair users for a Vehicle-to-Pedestrian (V2P) application?
-<img width="707" height="647" alt="Screenshot 2026-03-27 at 00 22 15" src="https://github.com/user-attachments/assets/570ac5b5-13cf-4174-835b-a0b3f8788677" />
-2. 
-3. 
+<img width="707" height="647" alt="Screenshot 2026-03-27 at 00 22 15" src="https://github.com/user-attachments/assets/570ac5b5-13cf-4174-835b-a0b3f8788677" /> 
+<br>2. 
+<br>3. 
 
-Identified weaknesses or hallucinations:
+<br>Identified weaknesses or hallucinations:
 1. 
 2. 
 3. 
 
-### Reflection and Contribution: <br>
+<br>### Reflection and Contribution: <br>
 
 wenbin
 Working on this V2P wearable tag project significantly deepened my understanding of how automotive safety systems must balance technical performance, user privacy, and practical deployability. 
@@ -27,4 +27,4 @@ My primary contribution was conducting extensive research into real-world case s
 into an evidence-based design grounded in proven technologies, as well as contributing to the development of the project idea and refinement. Through this project, I learned that real-world deployment constraints (cost, 
 infrastructure availability, user adoption friction) must be considered as early as technical performance requirements—a lesson learned after initially proposing solutions that were technically sound but economically impractical. 
 My key takeaway is that automotive safety systems require balancing multiple competing priorities (performance vs. privacy vs. cost vs. usability), and the most successful designs aren't necessarily 
-the most technically advanced but rather those that make strategic trade-offs aligned with real-world constraints.
+the most technically advanced but rather those that make strategic trade-offs aligned with real-world constraints. <br>
