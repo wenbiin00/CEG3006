@@ -21,9 +21,9 @@ ChatGPT
 
 
 **<br>Identified weaknesses or hallucinations:**
-1. 
-2. The initial development of the block diagram
-3. 
+<br>1. The initial development of the block diagram consisted of incomplete/missing system components, critical to make the wearable function as a whole, hence repeated prompts had to be made to confirm functionality of system.
+<br>2. Some of the generated outputs are generic in details, and do not contain the full details unless further prompted.
+<br>3. Accuracy of component specifications such as latency, range, consumption may be inaccurate as the values are approximated from values found online, hence specifications are dependent on assumptions and not tied to readily available datasheets.
 
 <br>**Reflection and Contribution:** <br>
 wenbin
