@@ -1,4 +1,4 @@
-# CEG3006
+# CEG3006 - V2P Group Project
 
 ## Group 09 <br>
 <ul>
