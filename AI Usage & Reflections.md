@@ -33,4 +33,5 @@ into an evidence-based design grounded in proven technologies, as well as contri
 infrastructure availability, user adoption friction) must be considered as early as technical performance requirements—a lesson learned after initially proposing solutions that were technically sound but economically impractical. 
 My key takeaway is that automotive safety systems require balancing multiple competing priorities (performance vs. privacy vs. cost vs. usability), and the most successful designs aren't necessarily 
 the most technically advanced but rather those that make strategic trade-offs aligned with real-world constraints. <br>
-Yan Ming
+<ins>Yan Ming</ins> <br>
+Through working on this project, I learnt more about the V2X communication, how it helps in improving road safety and different types of V2X implementations, particularly V2P. 
