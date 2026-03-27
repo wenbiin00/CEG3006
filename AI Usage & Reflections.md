@@ -26,7 +26,7 @@ ChatGPT
 <br>3. Accuracy of component specifications such as latency, range, consumption may be inaccurate as the values are approximated from values found online, hence specifications are dependent on assumptions and not tied to readily available datasheets.
 
 <br>**Reflection and Contribution:** <br>
-<u>wenbin</u>
+<ins>wenbin</ins> <br>
 Working on this V2P wearable tag project significantly deepened my understanding of how automotive safety systems must balance technical performance, user privacy, and practical deployability. 
 My primary contribution was conducting extensive research into real-world case studies—from industrial ZoneSafe tags to clinical elderly care systems—which transformed our initial abstract concept
 into an evidence-based design grounded in proven technologies, as well as contributing to the development of the project idea and refinement. Through this project, I learned that real-world deployment constraints (cost, 
