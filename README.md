@@ -67,18 +67,24 @@ https://www.mdpi.com/2079-9292/13/2/331
 <p>Need research for this section as well. Create a table and fill it in with possible hardware implementations and their respective parameters.</p>
 <br>
 
-| Component | Selected Device | Key Specs | Purpose |
-|---|---|---|---|
-| MCU | Nordic nRF5340 | Dual-core Cortex-M33, 128 MHz, 1 MB Flash, BLE 5.4 | Main controller for processing and communication |
-| GNSS Module | u-blox MIA-M10Q | Multi-GNSS, ~1.5 m accuracy, 5–10 Hz update | Provides global positioning |
-| UWB Module | Qorvo DW3110 | ±10 cm accuracy, up to 6.8 Mbps | Enables short-range precision tracking |
-| IMU | Bosch BMI270 | 6-axis, low power, 50–100 Hz sampling | Supports motion tracking |
-| Communication (Prototype) | BLE (nRF5340) | ~100–150 m range, low latency | Used for vehicle discovery and messaging |
-| Communication (Deployment) | C-V2X Transceiver (e.g., Quectel AG15) | PC5 sidelink, low latency (<100 ms), high reliability | Enables direct vehicle-to-pedestrian communication |
-| Buzzer | CUI CMT-8540S-SMT | 100 dBA @ 10 cm, 4 kHz | Audible warning |
-| Vibration Motor | Coin motor | 3 V operation | Provides haptic feedback |
-| PMIC | Nordic nPM1100 | Li-Po charging, low power | Power management |
-| Battery | Li-Po 500–1000 mAh | 3.7 V nominal | Portable power source |
+| Module | Hardware Component | Selected Device | Function | Specifications | Electrical Specifications |
+| --- | --- | --- | --- | --- | --- |
+| Processing Unit | Microcontroller | Nordic nRF5340 | Central controller for sensor fusion, communication handling, and alert logic |Dual-core Cortex-M33 (128 MHz), 1 MB Flash, 512 KB RAM, integrated BLE 5.4, ultra-low power modes | V: 1.7–3.6 V, Active: ~5–10 mA, Sleep: ~2–5 µA |
+| Positioning Unit | GNSS | u-blox MIA-M10Q | Provides long range global positioning for pedestrian tracking and trajectory estimation | Multi-constellation (GPS, GLONASS, Galileo, BeiDou), ~1.5 m accuracy, up to 10 Hz update rate, ultra-low power | V: 1.8–3.6 V, Active: ~25–30 mW (~8–10 mA @3.3V) |
+| Positioning Unit | UWB Module | Qorvo DW3110 | Enables high-precision positioning in close-range conflict zones | 6.0–8.5 GHz, ±10 cm accuracy, up to 6.8 Mbps, low power | V: 2.4–3.6 V, TX: ~60–90 mA, RX: ~50–80 mA |
+| Data Processing | Sensor Fusion Module (Software) | Implemented on MCU | Combines GNSS, IMU, and UWB data for accurate positioning and trajectory estimation | Kalman filter / sensor fusion algorithm, real-time processing | Runs on MCU, no additional hardware |
+| Decision Logic | Collision Risk Assessment Module (Software) | Implemented on MCU | Evaluates collision risk using trajectory prediction and Time-to-Collision (TTC) calculations | TTC computation, threshold-based risk detection, real-time response | Runs on MCU, minimal additional power |
+| Motion Sensing | IMU | Bosch BMI270 | Improves tracking during GNSS signal degradation and supports motion estimation | 6-axis IMU, 50–100 Hz typical sampling, ultra-low power | V: 1.7–3.6 V, Active: ~0.6–1 mA, Low-power: ~100–200 µA |
+| Communication Unit (Prototype) | BLE (integrated in MCU) | nRF5340 BLE | Used for vehicle discovery and low-latency beaconing in prototype setup | BLE 5.3/5.4, ~100–150 m range (open field), <20–50 ms latency (target), 100–200 ms advertising interval | TX: ~4–8 mA, RX: ~4–5 mA |
+| Communication Unit (Deployment) | C-V2X Transceiver | Quectel AG15 | Direct vehicle-to-pedestrian communication via PC5 sidelink | Low latency (<100 ms), high reliability, ~50–300 m range | ~3.3–5 V, ~200–400 mA active (module dependent) |
+| Alert System | Acoustic Buzzer | CUI CMT-8540S-SMT | Provides loud audible warning in urban environments | 4 kHz, up to 100 dBA @ 10 cm, 5 V, ~150 mA | V: 5 V, Current: ~150 mA |
+| Alert System | Vibration Motor | Coin Vibration motor | Provides haptic feedback for redundancy and accessibility | 3 V operation, low power | V: 3 V, Current: ~60–100 mA |
+| Power Management | PMIC/Charger | Nordic nPM1100 | Ensures stable power delivery and safe battery operation | Li-Po charging (20-400mA), voltage regulation, protection features | Input: 3.7 V battery, Charge: up to 400 mA, Quiescent: ~400 nA |
+| Energy | Battery | Li-Po (500–1000 mAh) | Provides sufficient runtime for wearable operation (approx. 12–24 hours typical use) | 3.7 V nominal, rechargeable | Capacity: 500–1000 mAh, Peak current support: >500 mA |
+| Antenna System | GNSS Antenna | Ceramic chip antenna | Enables reliable satellite signal reception | Multi-band GNSS support | Passive |
+| Antenna System | UWB Antenna | UWB compact antenna | Supports precise ranging performance | 6–8.5 GHz compatible | Passive |
+| Antenna System | BLE Antenna | PCB/chip antenna | Enables wireless communication with vehicle system | 2.4GHz | Passive |
+| Casing | Wearable Casing | Werable Casing | Ensures portability, durability, and user comfort | <50 × 30 × 12 mm, <25 g, IP54 |
 
 ## AI Usage <br>
 <p>Insert AI prompts and responses from Gen AI.</p>
